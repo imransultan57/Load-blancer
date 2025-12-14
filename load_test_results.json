@@ -1,0 +1,21 @@
+{
+  "total_requests": 41091,
+  "successful_requests": 41091,
+  "failed_requests": 954,
+  "server_distribution": {
+    "backend-8082": 14096,
+    "backend-8083": 13968,
+    "backend-8081": 13027
+  },
+  "status_codes": {
+    "200": 41091
+  },
+  "response_time_stats": {
+    "min": 4.364252090454102,
+    "max": 10438.560724258423,
+    "mean": 997.5166338033342,
+    "median": 508.67486000061035
+  },
+  "duration": 61.76749134063721,
+  "requests_per_second": 665.2528556387392
+}

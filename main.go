@@ -1,10 +1,7 @@
 package main
 
 import (
-	"context"
 	"encoding/json"
-	"fmt"
-	"io"
 	"log"
 	"net/http"
 	"net/http/httputil"
@@ -151,7 +148,7 @@ func (s *ServerPool) GetBackends() []map[string]interface{} {
 
 // isBackendAlive checks if backend is alive
 func isBackendAlive(u *url.URL) bool {
-	timeout := 2 * time.Second
+	// timeout := 2 * time.Second
 	conn, err := http.Get(u.String() + "/health")
 	if err != nil {
 		return false
